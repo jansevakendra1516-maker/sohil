@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Admin Login</h1>
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<p id="error" style="color:red;"></p>
+</div>
+<script>
+function login(){
+if(username.value=="admin" && password.value=="1234"){
+location="admin.html";
+}else{
+error.innerHTML="Wrong login";
+}
+}
+</script>
+</body>
+</html>
